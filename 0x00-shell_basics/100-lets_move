@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -regex "\.\/[A-Z].*" | mv /tmp/u/
+find . -prune -type f -regex "\.\/[A-Z].*" | mv /tmp/u/
