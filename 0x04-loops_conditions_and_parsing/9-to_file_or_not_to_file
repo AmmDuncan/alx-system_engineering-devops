@@ -7,8 +7,8 @@ then
 	echo "school file does not exist"
 else
 	echo "school file exists"
-	file_content=$(cat "school")
-	if [ "$file_content" != "" ]
+	file_content=$(file "schoo")
+	if [ "$file_content" != "school: empty" ]
 	then
 		echo "school file is not empty"
 	else
