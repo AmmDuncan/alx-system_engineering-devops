@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script displays the content of the current directory
+files=$(ls)
+for i in $files
+do
+	echo "$i" | awk -F"\-" '{print $2}'
+done
