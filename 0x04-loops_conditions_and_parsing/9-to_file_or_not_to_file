@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script checks school file
+files=$(ls)
+content=$(echo "$files" | grep -o "^school$")
+if [ "$content" != "school" ]
+then
+	echo "school file does not exist"
+else
+	echo "school file exists"
+	file_content=$(cat "school")
+	if [ "$file_content" != "" ]
+	then
+		echo "school file is not empty"
+	else
+		echo "school file is empty"
+	fi
+	test -f "school"
+	if test -f "school"
+	then
+		echo "school is a regular file"
+	fi
+fi
