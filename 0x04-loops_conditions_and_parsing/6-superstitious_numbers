@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This scripts prints "1 - 20"
+# and prints bad luck for numbers that represent bad luck
+# in China, Japan and Italy
+count=1
+while [ "$count" -lt 21 ]
+do
+	echo "$count"
+	case $count in
+		4)
+			echo "bad luck from China"
+			;;
+		9)
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "bad luck from Italy"
+			;;
+	esac
+	(( count = count + 1 ))
+done
