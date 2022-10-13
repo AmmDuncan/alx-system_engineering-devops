@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # This script prints "Best School" 10 times using a while loop
 # Prints "Hi" on 9th print
-count=0
+count=1
 
-while [ "$count" -ne 10 ]
+while [ "$count" -lt 11 ]
 do
-	if [ "$count" = 8 ]
+	if [ "$count" = 9 ]
 	then
 		echo "Hi"
 	else
