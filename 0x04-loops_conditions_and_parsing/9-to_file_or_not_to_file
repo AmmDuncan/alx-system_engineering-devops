@@ -7,11 +7,12 @@ then
 	echo "school file does not exist"
 else
 	echo "school file exists"
-	file_content=$(file "schoo")
+	file_content=$(file "school")
 	if [ "$file_content" != "school: empty" ]
 	then
 		echo "school file is not empty"
-	else
+	elif [ "$file_content" = "school: empty" ]
+	then
 		echo "school file is empty"
 	fi
 	test -f "school"
