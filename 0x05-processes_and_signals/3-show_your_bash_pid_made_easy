@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script displays PID of processes whose name contain "base"
+pgrep -l bash
