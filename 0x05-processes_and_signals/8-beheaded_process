@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script will behead the ./7-highlander process
+PIDtoBehead=$(pgrep -f highlander)
+kill -9 "$PIDtoBehead"
