@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This scripts prints "To infinity and beyond" foreverrrr
-while [ 1 -eq 1 ]
+while true
 do
 	echo "To infinity and beyond"
 	sleep 2
