@@ -3,5 +3,5 @@
 files=$(ls)
 for i in $files
 do
-	echo "$i" | sed -n -e 's/^.*\-//p'
+	echo "$i" | cut -d '-' -f 2-
 done
