@@ -4,13 +4,13 @@
 cp -f /etc/hosts ~/hosts.new
 
 # make changes on new hosts file
-sed "s/127.0.0.1/127.0.0.2" ~/hosts.new
+sed "s/127.0.0.1/127.0.0.2/" ~/hosts.new
 
 if [ "$(grep "facebook.com" ~/hosts.new )" == "facebook.com" ]
 then
-	sed "s/.+facebook.com/8.8.8.8\tfacebook.com" ~/hosts.new
+	sed "s/.+facebook.com/8.8.8.8\tfacebook.com/" ~/hosts.new
 else
-	printf "8.8.8.8\tfacebook.com" >> ~/hosts.new
+	printf "8.8.8.8\tfacebook.com\n" >> ~/hosts.new
 fi
 
 # replace hosts file with new hosts file
