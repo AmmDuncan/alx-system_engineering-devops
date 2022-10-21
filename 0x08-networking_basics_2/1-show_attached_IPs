@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Print ipv4s attached to this PC
-ifconfig | grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+.[0-9]\+"
+hostname --all-ip-addresses
