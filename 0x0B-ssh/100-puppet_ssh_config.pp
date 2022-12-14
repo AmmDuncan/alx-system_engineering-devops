@@ -4,5 +4,5 @@ file { '/root/.ssh/config':
   content => "Host 54.146.83.42
 	  User ubuntu
 	  IdentityFile ~/.ssh/school
-	  IndentityOnly yes"
+	  IdentityOnly yes"
 }
