@@ -1,5 +1,5 @@
 # Configure ssh client
-file { '/root/.ssh/config':
+file { '/etc/ssh/ssh_config':
   ensure  => file,
   content => "Host 54.146.83.42
 	  User ubuntu
