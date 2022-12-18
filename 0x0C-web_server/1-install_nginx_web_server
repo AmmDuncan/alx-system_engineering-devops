@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# setup nginx on server
+# Bash script that configures a new Ubuntu nginx server
+
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install nginx
