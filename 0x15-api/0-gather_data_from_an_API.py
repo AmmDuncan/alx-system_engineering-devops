@@ -13,9 +13,9 @@ def main():
     employee_id = sys.argv[1]
     user = requests.get(USER_URL.format(userId=employee_id)).json()
     todos = requests.get(TODOS_URL.format(userId=employee_id)).json()
-    completed_tasks = [*filter(lambda t: t['completed'], todos)]
+    completed_tasks = [*filter(lambda t: t.get('completed'), todos)]
 
-    name = user['name']
+    name = user.get('name')
     num_of_completed_tasks = len(completed_tasks)
     num_of_tasks = len(todos)
 
