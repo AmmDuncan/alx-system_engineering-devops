@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-"""
-Script to gather data from an API
-"""
-import sys
+"""Script to gather data from an API"""
+
 import requests
+import sys
 
 
 def main():
-    "main function"
+    """Accept employee ID, get their details and tasks"""
     BASE_URL = "https://jsonplaceholder.typicode.com/"
     TODOS_URL = BASE_URL + "todos?userId={userId}"
     USER_URL = BASE_URL + "users/{userId}"
