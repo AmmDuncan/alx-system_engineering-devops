@@ -7,6 +7,7 @@ import requests
 
 
 def main():
+    "main function"
     BASE_URL = "https://jsonplaceholder.typicode.com/"
     TODOS_URL = BASE_URL + "todos?userId={userId}"
     USER_URL = BASE_URL + "users/{userId}"
