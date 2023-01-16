@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Script to gather data from an API
 """
