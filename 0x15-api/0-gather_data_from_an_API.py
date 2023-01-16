@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-"""Script to gather data from an API"""
+"""
+Script to gather data from an API
+
+Gets data from https://jsonplaceholder.typicode.com/todos
+and https://jsonplaceholder.typicode.com/users/<id>
+"""
 
 import requests
 import sys
